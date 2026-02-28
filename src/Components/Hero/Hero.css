@@ -1,0 +1,112 @@
+.stroke_light_lg {
+  font-size: clamp(100px, 30vw, 460px);
+  background: -webkit-linear-gradient(top, var(--text-main), var(--bg-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke: 2px transparent;
+  color: var(--secondary-bg);
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.stroke_dark_lg {
+  font-size: clamp(100px, 29vw, 460px);
+  color: var(--text-main);
+  -webkit-text-stroke: 0px;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.img-custom-anim-left {
+  animation: img-anim-left 1.2s forwards cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@keyframes img-anim-left {
+  0% {
+    clip-path: inset(0 100% 0 0);
+    opacity: 0;
+  }
+
+  100% {
+    clip-path: inset(0 0 0 0);
+    opacity: 0.75;
+  }
+}
+
+.heroImg {
+  z-index: 2;
+  position: absolute;
+  top: 150px;
+  right: 70px;
+  height: clamp(550px, 60vw, 1025px);
+  width: auto;
+}
+
+.hero-tag {
+  z-index: 2;
+  position: absolute;
+  top: 400px;
+  left: 100px;
+}
+
+.hero-button {
+  z-index: 2;
+  position: absolute;
+  top: 450px;
+  right: 100px;
+}
+
+.button-cv {
+  z-index: 2;
+  background-color: #8054FF;
+  padding: 11px;
+}
+
+.button-cv:hover {
+  z-index: 2;
+  background-color: #8054FF;
+  padding: 11px;
+}
+
+@media (max-width: 890px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .heroImg {
+    position: relative;
+    display: block;
+    margin: 40px auto;
+    top: auto;
+    right: auto;
+    height: clamp(280px, 60vw, 420px);
+  }
+
+  .stroke_light_lg,
+  .stroke_dark_lg {
+    display: none;
+  }
+
+  .hero-tag {
+    position: relative;
+    top: auto;
+    left: auto;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .hero-button {
+    position: relative;
+    top: auto;
+    right: auto;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+}

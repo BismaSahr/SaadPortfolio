@@ -1,0 +1,56 @@
+.experti {
+    transition: all 0.3s ease-in-out;
+    border: 1px solid transparent;
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+}
+
+.experti:hover {
+    transform: translateY(-8px);
+    border-color: #8054FF;
+    box-shadow: 0 15px 30px rgba(128, 84, 255, 0.1) !important;
+}
+
+.experti img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.experti h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.experti p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.stroke_light_xl {
+    font-size: 120px;
+    font-weight: 300;
+    color: transparent;
+    -webkit-text-stroke: 1px transparent;
+    right: 20px !important;
+    top: 50% !important;
+    transform: translateY(-50%);
+    pointer-events: none;
+    user-select: none;
+    font-family: inherit;
+    transition: all 0.3s ease-in-out;
+}
+
+.hover-up:hover .stroke_light_xl {
+    -webkit-text-stroke: 1px #d6c6ff;
+}
+
+.expertise-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}

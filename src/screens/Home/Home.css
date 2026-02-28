@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../../assets/fonts/DMSans_18pt-Regular.ttf');
+}
+
+* {
+    font-family: 'DM Sans';
+}
+
+.home-container {
+    padding: 0;
+    margin: 0;
+}
+
+.hero-section {
+    padding-top: 50px;
+    background-color: var(--secondary-bg);
+    transition: background-color 0.3s ease;
+}

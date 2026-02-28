@@ -1,0 +1,76 @@
+.clients-section {
+    background-color: #f0f4e9;
+    padding: 80px 0;
+}
+
+.clients-heading {
+    color: black;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.clients-heading span {
+    color: #8054FF;
+}
+
+.clients-desc {
+    max-width: 90%;
+}
+
+.clients-toggle {
+    display: inline-flex;
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding: 6px;
+    gap: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.toggle-btn {
+    border: none;
+    background: transparent;
+    padding: 8px 24px;
+    border-radius: 50px;
+    color: #6c757d;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.toggle-btn.active {
+    background-color: #8054FF;
+    color: #ffffff;
+}
+
+.client-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+.client-icon {
+    max-width: 70%;
+    max-height: 80px;
+    filter: grayscale(100%) opacity(0.5);
+    transition: all 0.4s ease;
+}
+
+.client-card:hover {
+    background-color: #8054FF;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(43, 48, 116, 0.2);
+}
+
+.client-card:hover .client-icon {
+    filter: grayscale(0%) opacity(1);
+    /* For logos that might need brightness inversion, users often handle that per logo natively,
+       we will fulfill the user instruction 'first uncoloured then hover it gets its actual color'.
+    */
+}

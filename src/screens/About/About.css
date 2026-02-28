@@ -1,0 +1,207 @@
+/* .about-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  overflow-x: hidden;
+}
+
+.about-container .row.align-items-stretch {
+  display: flex;
+}
+
+.right-column-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.zoom-img {
+  overflow: hidden;
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+}
+
+.parallax-item {
+  transition: transform 0.3s ease-out;
+  transform-origin: center;
+}
+
+.custom-primary { color: var(--primary-color); }
+.custom-border { border-color: var(--primary-color); }
+
+.stats-section {
+  padding-top: 20px;
+}
+
+.stats-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.plus-style {
+  font-size: 40px;
+  font-weight: 700;
+  -webkit-text-stroke: 1px rgb(88, 84, 84);
+  color: transparent;
+  line-height: 1;
+}
+
+.full-width-paragraph {
+  width: 90%;
+  margin: 0;
+}
+
+.skills-grid {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+}
+
+
+.stats-section {
+  align-items: stretch;
+}
+
+.stat-col {
+  display: flex;
+}
+
+.stat-card {
+  width: 100%;
+  height: 100%;
+  min-height: 260px;   
+  max-height: 260px;   
+  padding: 30px 20px;
+  border-radius: 20px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.stat-title {
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.stat-text {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+.stat-card:hover {
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  transform: translateY(-6px);
+}
+
+@media (min-width: 1400px) {
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 991px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Container Padding */
+.about-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* Zoom Image & Parallax Styling */
+.zoom-img {
+  overflow: hidden;
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+}
+
+.parallax-item {
+  transition: transform 0.3s ease-out;
+  transform-origin: center;
+}
+
+/* Primary Color */
+.custom-primary {
+  color: var(--primary-color);
+}
+
+/* Border Color */
+.custom-border {
+  border-color: var(--primary-color);
+}
+
+/* Stats Section */
+.stats-section {
+  padding-top: 20px;
+}
+
+.stats-number {
+  gap: 4px;
+  margin: 10px 0;
+}
+
+.stats-number span {
+  line-height: 1;
+}
+
+/* Text & Link Styling */
+.stats-section a {
+  color: var(--primary-color);
+  transition: 0.3s ease;
+}
+
+.stats-section a:hover {
+  opacity: 0.8;
+}
+
+/* Paragraph alignment */
+.full-width-paragraph {
+  width: 90%;
+  margin: 0;
+}

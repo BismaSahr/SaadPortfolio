@@ -1,0 +1,25 @@
+html, body {
+  cursor: auto; 
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #666;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.cursor-ring {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #999;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9998;
+}
