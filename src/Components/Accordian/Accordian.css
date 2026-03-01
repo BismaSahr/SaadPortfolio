@@ -117,9 +117,9 @@
   background-color: transparent !important;
   color: transparent !important;
   border: none !important;
-  border-bottom: 1.5px solid #666 !important;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.175) !important;
   border-radius: 0 !important;
-  padding: 2rem 0 !important;
+  padding: 3rem 0 0 0 !important;
   box-shadow: none !important;
   transition: all 0.4s ease;
   position: relative;
@@ -132,13 +132,23 @@
 }
 
 .massive-bubble-text {
-  font-size: 5.5rem !important;
-  font-weight: 800 !important;
-  line-height: 1;
+  font-size: 7.0rem !important;
+  line-height: 0.8 !important;
   text-transform: uppercase;
-  -webkit-text-stroke: 1px #333;
+  -webkit-text-stroke: 1px #222222;
+  color: transparent;
   letter-spacing: -1px;
-  transition: all 0.4s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.outer-header-custom .accordion-button:hover .massive-bubble-text,
+.outer-header-custom .accordion-button:not(.collapsed) .massive-bubble-text {
+  transform: translateX(30px);
+}
+
+.outer-header-custom .accordion-button:hover,
+.outer-header-custom .accordion-button:not(.collapsed) {
+  padding-bottom: 2.5rem !important;
 }
 
 .outer-header-custom .accordion-button>div {
@@ -148,26 +158,53 @@
 .outer-head-arrow {
   width: 45px;
   height: 45px;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238054FF' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3e%3cline x1='7' y1='17' x2='17' y2='7'/%3e%3cpolyline points='7 7 17 7 17 17'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238054FF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cline x1='7' y1='17' x2='17' y2='7'/%3e%3cpolyline points='7 7 17 7 17 17'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  margin-top: -1.5rem;
+  margin-top: -1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease, height 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), transform 0.4s ease;
 }
 
-
-.outer-header-custom .accordion-button:hover .massive-bubble-text {
-  -webkit-text-stroke-color: #8054FF;
+.col-2-head {
+  font-size: 37px !important;
+  color: #222222;
 }
 
-.outer-header-custom .accordion-button:not(.collapsed) .massive-bubble-text {
-  -webkit-text-stroke-color: #8054FF;
+.col-2-p {
+  font-size: 16px;
+  color: #212529;
 }
 
-.outer-header-custom .accordion-button:hover .outer-head-arrow {
-  transform: translate(2px, -2px);
-  transition: transform 0.3s ease;
+.col-2-button {
+  background-color: white !important;
+  font-size: 14px !important;
+  color: #222222 !important;
+  padding: 15px 30px !important;
+  border: 1px solid #e6e6e6 !important;
+  font-weight: 600 !important;
+  border-radius: 20px !important;
+
 }
+
+.col-2-button:hover {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+.outer-header-custom {
+  margin-top: 100px;
+}
+
+.outer-header-custom .accordion-button:hover .outer-head-arrow,
+.outer-header-custom .accordion-button:not(.collapsed) .outer-head-arrow {
+  opacity: 1;
+  height: 90px;
+  transform: translateY(-10px);
+}
+
+/* Unification handled above */
 
 .accordion-item {
   border: none !important;
@@ -190,19 +227,40 @@
 }
 
 @media (max-width: 768px) {
+  .outer-header-custom {
+    margin-top: 50px;
+  }
+
   .massive-bubble-text {
-    font-size: 2.5rem !important;
-    -webkit-text-stroke: 0.5px #333;
+    font-size: 3.5rem !important;
+    line-height: 1 !important;
+    -webkit-text-stroke: 0.5px #222222;
   }
 
   .outer-header-custom .accordion-button {
-    padding: 1.5rem 0 !important;
+    padding: 1.5rem 0 0 0 !important;
+  }
+
+  .outer-header-custom .accordion-button:hover .massive-bubble-text,
+  .outer-header-custom .accordion-button:not(.collapsed) .massive-bubble-text {
+    transform: translateX(15px);
   }
 
   .outer-head-arrow {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     margin-top: -0.5rem;
+  }
+
+  .outer-header-custom .accordion-button:hover .outer-head-arrow,
+  .outer-header-custom .accordion-button:not(.collapsed) .outer-head-arrow {
+    height: 45px;
+    transform: translateY(-5px);
+  }
+
+  .outer-header-custom .accordion-button:hover,
+  .outer-header-custom .accordion-button:not(.collapsed) {
+    padding-bottom: 1.5rem !important;
   }
 
   .coaching-head {

@@ -160,8 +160,19 @@ const TickerRow = ({ reviews, directionClass }) => {
 const Testimonials = () => {
   return (
     <section className="testimonials-section">
-      <Container className="mb-5 pt-5">
-        <div className="testimonial-large-heading text-center mb-2">TESTIMONIALS</div>
+      <Container className="mb-5">
+        <div className="container  mb-5">
+        <div className="row justify-content-center">
+          <div className="col-12 text-center mt-4">
+            <span className="custom-primary custom-border text-uppercase bg-white rounded-3 px-3 py-1 fw-medium mb-3 d-inline-block">
+              Testimonals
+            </span>
+            <h2 className="display-5 fw-bold text-dark">
+              My Testimonals   
+            </h2>
+          </div>
+        </div>
+      </div>
         <Row className="justify-content-center">
           <Col lg={9} xl={8} xs={10} className="d-flex flex-column justify-content-center">
             <div className="testimonials-header mt-3">

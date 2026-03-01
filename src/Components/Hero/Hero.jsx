@@ -27,7 +27,7 @@ const HeroSection = () => {
                     className="stroke_light_lg lh-1"
                     data-aos="zoom-in"
                 >
-                    UI & UX Design
+                    Freelancer
                 </motion.p>
                 <img src={heroImg} className="heroImg" data-aos="zoom-in" />
                 <motion.div
@@ -36,8 +36,8 @@ const HeroSection = () => {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 1, ease: "easeOut" }}
                 >
-                    <p className="fs-5">Freelance</p>
-                    <p className="fs-5 fw-bold">User Interface Designer</p>
+                    <p className="fs-5">Freelancer</p>
+                    <p className="fs-5 fw-bold">Expert Web Designer, Developer & Consultant</p>
                 </motion.div>
 
                 {/* <motion.div
