@@ -10,6 +10,7 @@ import Process from "../Processes/Process"
 import CircularBadge from "../../Components/CircularBadge/CircularBadge"
 import MyProjects from "../MyProjects/MyProjects"
 import Testimonials from "../Testimonials/Testimonials"
+import FAQ from "../../Components/FAQ/FAQ"
 import Pricing from "../Pricing/Pricing"
 import Contact from "../Contact/Contact"
 import Footer from "../../Components/Footer/Footer"
@@ -34,6 +35,7 @@ const Home = () => {
 
             <MyProjects />
             <Testimonials />
+            <FAQ />
             <Pricing />
             <Contact />
             <Footer />
