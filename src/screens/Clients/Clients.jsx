@@ -8,7 +8,7 @@ const Clients = () => {
     const [activeTab, setActiveTab] = useState('clients');
 
     return (
-        <Container fluid className="clients-section px-lg-5">
+        <Container fluid className="clients-section px-lg-5" id='clients'>
             <div className="container mb-5 mt-3">
                 <Row className="align-items-start mb-5 pb-3">
                     <Col lg={6} md={12} className="mb-4 mb-lg-0">

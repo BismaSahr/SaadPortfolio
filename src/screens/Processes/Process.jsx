@@ -1,7 +1,7 @@
 import Accordion from "../../Components/Accordian/Accordian";
 const Process = ()=>{
     return(
-        <section>
+        <section id="processes">
         <Accordion/>    
         </section>
     )

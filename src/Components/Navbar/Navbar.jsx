@@ -12,6 +12,13 @@ import dotMenuImg from '../../assets/dot-menu.png';
 function NavBar() {
   const expand = 'lg'; 
 
+  const handleTalkClick = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <Navbar key={expand} expand={expand} className="page-nav mb-3">
       <Container fluid className="px-3">
@@ -60,9 +67,13 @@ function NavBar() {
 
             <Nav className="mx-auto nav-center">
               <Nav.Link href="#home" className="links">Home</Nav.Link>
-              <Nav.Link href="#portfolio" className="links">About</Nav.Link>
-              <Nav.Link href="#blog" className="links">Processes</Nav.Link>
-              <Nav.Link href="#faqs" className="links">Projects</Nav.Link>
+              <Nav.Link href="#about" className="links">About</Nav.Link>
+              <Nav.Link href="#expertise" className="links">Expertise</Nav.Link>
+              <Nav.Link href="#processes" className="links">Processes</Nav.Link>
+              <Nav.Link href="#projects" className="links">Projects</Nav.Link>
+              <Nav.Link href="#testimonals" className="links">Testimonials</Nav.Link>
+              <Nav.Link href="#faqs" className="links">FAQs</Nav.Link>
+              <Nav.Link href="#clients" className="links">Clients</Nav.Link>
               <Nav.Link href="#contact" className="links">Contact</Nav.Link>
             </Nav>
 
@@ -70,7 +81,7 @@ function NavBar() {
               <div className="theme-toggle-desktop d-none d-lg-flex me-4">
                 <i className="bi bi-moon-stars-fill"></i>
               </div>
-              <Button variant="outline-secondary text-black button-talk">Let's Talk</Button>
+              <Button variant="outline-secondary text-black button-talk" onClick={handleTalkClick}>Let's Talk</Button>
             </div>
           </Offcanvas.Body>
         </Navbar.Offcanvas>

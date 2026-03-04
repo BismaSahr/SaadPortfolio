@@ -68,7 +68,7 @@ const Pricing = () => {
 
                 <div className="pricing-grid">
                     {pricingData.map((plan, index) => (
-                        <div key={index} className={`pricing-card ${plan.isFeatured ? 'featured' : ''}`} data-aos="flip-left">
+                        <div key={index} className={`pricing-card ${plan.isFeatured ? 'featured' : ''}`}>
                             <h3 className="plan-title">{plan.title}</h3>
                             <div className="plan-price">
                                 <span className="currency">$</span>

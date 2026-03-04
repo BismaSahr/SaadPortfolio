@@ -4,7 +4,7 @@ import './Contact.css';
 import contactImg from '../../assets/img-contactme.png';
 const Contact = () => {
     return (
-        <Container fluid className="contact-section border-top">
+        <Container fluid className="contact-section" id='contact'>
             <Container>
                 <Row className="align-items-center">
                     <Col lg={6} className="mb-5 mb-lg-0" data-aos="fade-right">

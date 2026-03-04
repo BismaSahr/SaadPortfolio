@@ -198,7 +198,7 @@ const About = () => {
   };
 
   return (
-    <Container fluid className="about-container px-lg-5 ">
+    <Container fluid className="about-container px-lg-5 " id="about">
       <Row className="g-5 justify-content-center align-items-start">
 
         {/* Left Column */}

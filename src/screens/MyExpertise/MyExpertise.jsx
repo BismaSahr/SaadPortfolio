@@ -31,7 +31,7 @@ const expertiseData = [
 
 const MyExpertise = () => {
     return (
-        <Container fluid className="expertise-section px-lg-5" style={{ backgroundColor: '#f0f4e9' }}>
+        <Container fluid className="expertise-section px-lg-5" style={{ backgroundColor: '#f0f4e9' }} id='expertise'>
             <div className="container mb-5">
                 <div className="row justify-content-center">
                     <div className="col-12 text-center mt-4">

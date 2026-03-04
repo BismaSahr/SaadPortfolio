@@ -159,7 +159,7 @@ const TickerRow = ({ reviews, directionClass }) => {
 
 const Testimonials = () => {
   return (
-    <section className="testimonials-section">
+    <section className="testimonials-section" id='testimonals'>
       <Container className="mb-5">
         <div className="container  mb-5">
         <div className="row justify-content-center">

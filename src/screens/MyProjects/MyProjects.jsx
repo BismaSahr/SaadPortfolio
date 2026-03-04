@@ -82,7 +82,7 @@ const MyProjects = () => {
   };
 
   return (
-    <section className="projects-section py-5">
+    <section className="projects-section py-5" id='projects'>
       <div className="container mt-5 mb-5">
         <div className="row justify-content-center">
           <div className="col-12 text-center mt-4">

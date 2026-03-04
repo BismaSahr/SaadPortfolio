@@ -21,7 +21,7 @@ const FAQ = () => {
     ];
 
     return (
-        <section className="faq-section py-5">
+        <section className="faq-section py-5 bg-secondary-1" id="faqs">
             <Container>
                 <Row className="align-items-center gy-5">
                     {/* Left Column: Text & Accordion */}
@@ -34,14 +34,14 @@ const FAQ = () => {
                                 Get every single <br /> answer here
                             </h2>
 
-                            <Accordion defaultActiveKey="0" className="faq-accordion">
+                            <Accordion className="faq-accordion">
                                 {faqData.map((item, index) => (
-                                    <Accordion.Item eventKey={index.toString()} key={index} className="mb-4">
+                                    <Accordion.Item eventKey={index.toString()} key={index} className="mb-4 accor-item">
                                         <Accordion.Header className="faq-header">
                                             {item.question}
                                         </Accordion.Header>
                                         <Accordion.Body className="faq-body">
-                                            {item.answer}
+                                           <p> {item.answer}</p>
                                         </Accordion.Body>
                                     </Accordion.Item>
                                 ))}
