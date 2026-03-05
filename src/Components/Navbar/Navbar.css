@@ -24,6 +24,7 @@
     font-size: 14px;
     color: var(--text-main) !important;
 }
+
 .button-talk:hover {
     background: transparent;
     border: 1px solid var(--border-color);

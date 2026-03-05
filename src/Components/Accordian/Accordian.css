@@ -127,7 +127,8 @@
   align-items: center;
   /* cut off bottom of the text initially */
   overflow: hidden;
-  max-height: 7.5rem; /* adjust to hide descenders */
+  max-height: 7.5rem;
+  /* adjust to hide descenders */
   /* also limit width slightly so only a small portion of the end is clipped */
   max-width: 85%;
 }
@@ -152,14 +153,17 @@
 .outer-header-custom .accordion-button:hover .massive-bubble-text,
 .outer-header-custom .accordion-button:not(.collapsed) .massive-bubble-text {
   transform: translateX(30px);
-  margin-bottom: 0; /* reveal clipped bottom */
+  margin-bottom: 0;
+  /* reveal clipped bottom */
 }
 
 .outer-header-custom .accordion-button:hover,
 .outer-header-custom .accordion-button:not(.collapsed) {
   padding-bottom: 2.5rem !important;
-  max-height: none; /* allow full height when active */
-  max-width: none; /* show full text width when active */
+  max-height: none;
+  /* allow full height when active */
+  max-width: none;
+  /* show full text width when active */
 }
 
 .outer-header-custom .accordion-button>div {

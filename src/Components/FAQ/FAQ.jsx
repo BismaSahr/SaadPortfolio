@@ -41,7 +41,7 @@ const FAQ = () => {
                                             {item.question}
                                         </Accordion.Header>
                                         <Accordion.Body className="faq-body">
-                                           <p> {item.answer}</p>
+                                            <p> {item.answer}</p>
                                         </Accordion.Body>
                                     </Accordion.Item>
                                 ))}

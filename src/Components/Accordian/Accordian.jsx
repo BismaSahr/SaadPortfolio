@@ -21,7 +21,7 @@ const Accordian = () => {
       </div>
       <Accordion>
         <Accordion.Item eventKey="0">
-          <Accordion.Header className="outer-header-custom mt-5"  data-aos="slide-left">
+          <Accordion.Header className="outer-header-custom mt-5" data-aos="slide-left">
             <div className="d-flex align-items-center">
               <span className="outer-head-arrow"></span>
               <span className="massive-bubble-text">UI & UX Design</span>
@@ -59,7 +59,7 @@ const Accordian = () => {
         </Accordion.Item>
 
         <Accordion.Item eventKey="1">
-          <Accordion.Header className="outer-header-custom" data-aos="slide-left"> 
+          <Accordion.Header className="outer-header-custom" data-aos="slide-left">
             <div className="d-flex align-items-center">
               <span className="outer-head-arrow"></span>
               <span className="massive-bubble-text">4D Animations</span>
@@ -134,7 +134,7 @@ const Accordian = () => {
           </Accordion.Body>
         </Accordion.Item>
 
-    <Accordion.Item eventKey="3">
+        <Accordion.Item eventKey="3">
           <Accordion.Header className="outer-header-custom" data-aos="slide-left">
             <div className="d-flex align-items-center">
               <span className="outer-head-arrow"></span>

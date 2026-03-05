@@ -10,7 +10,7 @@ import logoImg from '../../assets/favicon.svg';
 import dotMenuImg from '../../assets/dot-menu.png';
 
 function NavBar() {
-  const expand = 'lg'; 
+  const expand = 'lg';
 
   const handleTalkClick = () => {
     const contactSection = document.getElementById('contact');

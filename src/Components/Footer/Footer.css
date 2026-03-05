@@ -32,7 +32,7 @@
 .lets-talk-btn {
     width: 100px;
     height: 100px;
- 
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,7 +68,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     background: white;
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .social-item {
