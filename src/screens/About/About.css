@@ -200,6 +200,25 @@
   opacity: 0.8;
 }
 
+/* Dark Mode Styles */
+body.dark-theme .about-container {
+  background-color: var(--bg-color);
+}
+
+body.dark-theme .about-container h1,
+body.dark-theme .about-container h2,
+body.dark-theme .about-container h3 {
+  color: var(--text-main);
+}
+
+body.dark-theme .about-container .text-muted {
+  color: var(--text-secondary) !important;
+}
+
+body.dark-theme .about-container p {
+  color: var(--text-secondary);
+}
+
 /* Paragraph alignment */
 .full-width-paragraph {
   width: 90%;

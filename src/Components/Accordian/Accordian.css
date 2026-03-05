@@ -54,8 +54,30 @@
 
 .inner-acc-body {
   border-radius: 20px;
-  background-color: black;
-  color: white;
+  background-color: var(--card-bg);
+  color: var(--text-main);
+}
+
+/* Processes section only dark-mode tweaks */
+body.dark-theme .processes-section {
+  background-color: #000000;
+}
+
+body.dark-theme .processes-section h2.display-5 {
+  color: var(--text-main) !important;
+}
+
+body.dark-theme .outer-header-custom .accordion-button {
+  color: var(--text-main) !important;
+}
+
+body.dark-theme .inner-acc-body {
+  background-color: var(--card-bg);
+  color: var(--text-main);
+}
+
+body.dark-theme .massive-bubble-text {
+  -webkit-text-stroke: 1px var(--text-main);
 }
 
 .accordion-button::after {
@@ -304,3 +326,31 @@
     font-size: 1.25rem !important;
   }
 }
+
+/* Dark Mode Styles */
+body.dark-theme .massive-bubble-text {
+  -webkit-text-stroke: 1px var(--text-main);
+}
+
+body.dark-theme .col-2-head {
+  color: var(--text-main) !important;
+}
+
+body.dark-theme .col-2-p {
+  color: var(--text-secondary) !important;
+}
+
+body.dark-theme .col-2-button {
+  background-color: var(--card-bg) !important;
+  color: var(--text-main) !important;
+  border-color: var(--border-color) !important;
+}
+
+body.dark-theme .outer-header-custom .accordion-button {
+  border-bottom-color: var(--border-color) !important;
+}
+
+body.dark-theme .accordion-item {
+  border-bottom-color: var(--border-color) !important;
+}
+

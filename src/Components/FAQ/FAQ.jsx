@@ -30,7 +30,7 @@ const FAQ = () => {
                             <span className="custom-primary custom-border text-uppercase bg-white rounded-3 px-3 py-1 fw-medium mb-3 d-inline-block">
                                 FAQ Page
                             </span>
-                            <h2 className="fhead fw-bold text-dark mb-5">
+                            <h2 className="fhead fw-bold mb-5">
                                 Get every single <br /> answer here
                             </h2>
 

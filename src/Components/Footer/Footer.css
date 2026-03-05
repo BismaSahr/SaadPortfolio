@@ -12,11 +12,13 @@
     font-size: 2rem;
     line-height: 1.4;
     font-weight: 500;
+    color: #fff;
 }
 
 .footer-title {
     font-size: 1.25rem;
     font-weight: 600;
+    color: #fff;
 }
 
 .linkCol {
@@ -61,6 +63,7 @@
     font-weight: 800;
     line-height: 1;
     letter-spacing: -3px;
+    color: #fff;
 }
 
 /* Social Bar Grid */
@@ -90,6 +93,17 @@
 .social-item:hover {
     background-color: #6342ff;
     color: #fff;
+}
+
+/* Dark Mode Styles */
+body.dark-theme .social-bar {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+body.dark-theme .social-item {
+    color: var(--text-main);
+    border-right-color: var(--border-color);
 }
 
 /* Responsive Grid */

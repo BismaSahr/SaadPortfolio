@@ -53,6 +53,14 @@
   left: 100px;
 }
 
+.hero-tag p {
+  color: var(--text-main);
+}
+
+body.dark-theme .hero-tag p {
+  color: #ffffff;
+}
+
 .hero-button {
   z-index: 2;
   position: absolute;

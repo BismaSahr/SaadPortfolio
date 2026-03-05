@@ -65,6 +65,11 @@
     font-size: 48px !important;
 }
 
+/* main heading color uses theme variable */
+.fhead {
+    color: var(--text-main);
+}
+
 /* Right Side Image & Badge */
 .faq-img {
     width: 100%;
@@ -103,4 +108,45 @@
         left: 10px;
         transform: scale(0.8);
     }
+}
+
+/* Dark mode overrides - light mode remains unchanged */
+body.dark-theme .faq-section {
+    background-color: var(--secondary-bg);
+}
+
+body.dark-theme .faq-content h2 {
+    color: var(--text-main);
+}
+
+body.dark-theme .faq-badge {
+    background-color: var(--card-bg);
+    color: var(--text-main);
+}
+
+body.dark-theme .faq-accordion .accordion-item {
+    background-color: var(--card-bg) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme .faq-accordion .accordion-button {
+    color: var(--text-main) !important;
+    background-color: var(--card-bg) !important;
+    background-image: none !important;
+}
+
+body.dark-theme .faq-accordion .faq-body,
+body.dark-theme .faq-accordion .accordion-body {
+    background-color: var(--card-bg) !important;
+    background-image: none !important;
+    color: #ffffff !important;
+}
+
+body.dark-theme .faq-accordion .faq-body p,
+body.dark-theme .faq-accordion .accordion-body p {
+    color: #ffffff !important;
+}
+
+body.dark-theme .faq-head {
+    color: var(--text-main) !important;
 }

@@ -1,6 +1,8 @@
 .contact-section {
     padding-top: 100px;
     padding-bottom: 100px;
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease;
 }
 
 .contact-img {
@@ -12,23 +14,31 @@
 }
 
 .contact-bg-input {
-    background-color: #f0f4e9 !important;
+    background-color: var(--secondary-bg) !important;
+    color: var(--text-main) !important;
+    border: none !important;
 }
 
 .contact-bg-input:focus {
-    background-color: #f0f4e9 !important;
+    background-color: var(--secondary-bg) !important;
     box-shadow: none !important;
     outline: none !important;
+    color: var(--text-main) !important;
+}
+
+.contact-bg-input::placeholder {
+    color: var(--text-secondary);
 }
 
 .contact-icon-wrapper {
-    background-color: #f0f4e9a1;
+    background-color: var(--secondary-bg);
     padding: 0.75rem 1rem;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     display: flex;
     align-items: center;
-    color: #000;
+    color: var(--text-main);
+    transition: background-color 0.3s ease;
 }
 
 .contact-input {
@@ -36,27 +46,36 @@
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
     padding-left: 0;
+    background-color: var(--secondary-bg);
+    color: var(--text-main);
 }
 
 .contact-textarea-wrapper {
-    background-color: #f0f4e9;
+    background-color: var(--secondary-bg);
     padding: 1rem;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     border-bottom-left-radius: 12px;
     display: flex;
     align-items: flex-start;
+    color: var(--text-main);
+    transition: background-color 0.3s ease;
 }
 
 .contact-textarea {
     border: none;
-
     height: 180px;
+    background-color: var(--secondary-bg);
+    color: var(--text-main);
+}
+
+.contact-textarea::placeholder {
+    color: var(--text-secondary);
 }
 
 .contact-btn {
-    background-color: black;
-    color: #fff;
+    background-color: var(--text-main);
+    color: var(--bg-color);
     padding: 12px 30px;
     font-weight: 600;
     border-radius: 8px;
@@ -75,4 +94,13 @@
     font-weight: 600;
     font-size: 0.9rem;
     letter-spacing: 1px;
+}
+
+/* Dark Mode Styles */
+body.dark-theme .contact-section h1 {
+    color: var(--text-main);
+}
+
+body.dark-theme .contact-section .text-muted {
+    color: var(--text-secondary) !important;
 }

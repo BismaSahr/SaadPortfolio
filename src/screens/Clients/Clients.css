@@ -1,10 +1,11 @@
 .clients-section {
-    background-color: #f0f4e9;
+    background-color: var(--secondary-bg);
     padding: 80px 0;
+    transition: background-color 0.3s ease;
 }
 
 .clients-heading {
-    color: black;
+    color: var(--text-main);
     font-size: 3rem;
     font-weight: 900;
 }
@@ -15,15 +16,22 @@
 
 .clients-desc {
     max-width: 90%;
+    color: var(--text-secondary);
 }
 
 .clients-toggle {
     display: inline-flex;
-    background-color: #ffffff;
+    background-color: var(--card-bg);
     border-radius: 50px;
     padding: 6px;
     gap: 4px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+/* paragraph description should be white only in dark mode */
+body.dark-theme .clients-desc,
+body.dark-theme .clients-desc.text-muted {
+    color: #ffffff !important;
 }
 
 .toggle-btn {
@@ -31,7 +39,7 @@
     background: transparent;
     padding: 8px 24px;
     border-radius: 50px;
-    color: #6c757d;
+    color: var(--text-secondary);
     font-weight: 600;
     font-size: 0.95rem;
     transition: all 0.3s ease;
@@ -43,7 +51,7 @@
 }
 
 .client-card {
-    background-color: #ffffff;
+    background-color: var(--card-bg);
     border-radius: 16px;
     padding: 30px;
     height: 200px;
@@ -70,7 +78,4 @@
 
 .client-card:hover .client-icon {
     filter: grayscale(0%) opacity(1);
-    /* For logos that might need brightness inversion, users often handle that per logo natively,
-       we will fulfill the user instruction 'first uncoloured then hover it gets its actual color'.
-    */
 }

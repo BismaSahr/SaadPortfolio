@@ -5,12 +5,14 @@ import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Form from 'react-bootstrap/Form';
 import { FaSearch } from 'react-icons/fa';
+import { useTheme } from '../../context/ThemeContext';
 import './Navbar.css';
 import logoImg from '../../assets/favicon.svg';
 import dotMenuImg from '../../assets/dot-menu.png';
 
 function NavBar() {
   const expand = 'lg';
+  const { isDarkMode, toggleTheme } = useTheme();
 
   const handleTalkClick = () => {
     const contactSection = document.getElementById('contact');
@@ -29,9 +31,14 @@ function NavBar() {
         </Navbar.Brand>
 
         <div className="d-flex align-items-center d-lg-none">
-          <div className="theme-toggle-mobile me-3">
-            <i className="bi bi-moon-stars-fill"></i>
-          </div>
+          <button 
+            className="theme-toggle-mobile me-3"
+            onClick={toggleTheme}
+            style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
+            aria-label="Toggle dark mode"
+          >
+            <i className={isDarkMode ? "bi bi-sun-fill" : "bi bi-moon-stars-fill"}></i>
+          </button>
 
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} className="border-0 shadow-none p-0">
             <div className="custom-toggle">
@@ -78,9 +85,14 @@ function NavBar() {
             </Nav>
 
             <div className="d-flex align-items-center mt-3 mt-lg-0">
-              <div className="theme-toggle-desktop d-none d-lg-flex me-4">
-                <i className="bi bi-moon-stars-fill"></i>
-              </div>
+              <button 
+                className="theme-toggle-desktop d-none d-lg-flex me-4"
+                onClick={toggleTheme}
+                style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
+                aria-label="Toggle dark mode"
+              >
+                <i className={isDarkMode ? "bi bi-sun-fill" : "bi bi-moon-stars-fill"}></i>
+              </button>
               <Button variant="outline-secondary text-black button-talk" onClick={handleTalkClick}>Let's Talk</Button>
             </div>
           </Offcanvas.Body>

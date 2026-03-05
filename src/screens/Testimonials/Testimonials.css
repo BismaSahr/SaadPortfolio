@@ -1,8 +1,9 @@
 .testimonials-section {
     padding: 80px 0;
     position: relative;
-    background-color: #ffffff;
+    background-color: var(--bg-color);
     overflow: hidden;
+    transition: background-color 0.3s ease;
 }
 
 .testimonials-header {
@@ -15,30 +16,40 @@
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 15px;
-    color: #111;
+    color: var(--text-main);
+}
+
+/* Ensure main testimonial heading follows theme variable too */
+.testimonials-section h2.display-5.fw-bold {
+    color: var(--text-main);
+}
+
+body.dark-theme .testimonials-section h2.display-5.fw-bold {
+    color: var(--text-main);
 }
 
 .testimonials-subtitle {
     font-size: 1.1rem;
-    color: #555;
+    color: var(--text-secondary);
     line-height: 1.5;
     max-width: 100%;
 }
 
 .rating-box {
-    background-color: #f6f6f6;
+    background-color: var(--secondary-bg);
     border-radius: 20px;
     padding: 60px;
     width: 100%;
     max-width: 350px;
     margin: 0 auto;
+    transition: background-color 0.3s ease;
 }
 
 .rating-score {
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 8px;
-    color: #111;
+    color: var(--text-main);
 }
 
 .rating-stars {
@@ -51,7 +62,7 @@
 }
 
 .rating-reviews-link a {
-    color: #555;
+    color: var(--text-secondary);
     text-decoration: underline;
     font-size: 0.9rem;
     font-weight: 600;
@@ -97,7 +108,7 @@
 
 /* Testimonial Card */
 .testimonial-card {
-    background-color: #f6f6f6;
+    background-color: var(--secondary-bg);
     border-radius: 24px;
     padding: 35px 30px;
     width: 370px;
@@ -105,7 +116,7 @@
     display: flex;
     flex-direction: column;
     white-space: normal;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .testimonial-card-stars {
@@ -120,12 +131,12 @@
     font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 10px;
-    color: #111;
+    color: var(--text-main);
 }
 
 .testimonial-card-text {
     font-size: 0.9rem;
-    color: #444;
+    color: var(--text-secondary);
     line-height: 1.5;
     margin-bottom: 30px;
     flex-grow: 1;
@@ -136,12 +147,12 @@
     align-items: center;
     gap: 8px;
     font-size: 0.8rem;
-    color: #555;
+    color: var(--text-secondary);
     font-weight: 700;
 }
 
 .testimonial-card-user {
-    color: #111;
+    color: var(--text-main);
 }
 
 /* Auto Animations */

@@ -1,8 +1,9 @@
 .projects-section {
     padding: 100px 0;
     position: relative;
-    background-color: #f0f4e9;
+    background-color: var(--secondary-bg);
     overflow: hidden;
+    transition: background-color 0.3s ease;
 }
 
 .ticker-container {
@@ -112,4 +113,17 @@
     .ticker-item img {
         width: 300px;
     }
+}
+
+/* Dark Mode Styles */
+body.dark-theme .projects-section {
+    background-color: var(--secondary-bg);
+}
+
+body.dark-theme .projects-section h2 {
+    color: var(--text-main);
+}
+
+body.dark-theme .stroke-text {
+    -webkit-text-stroke: 1px var(--text-secondary);
 }

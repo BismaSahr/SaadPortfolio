@@ -86,10 +86,10 @@ const MyProjects = () => {
       <div className="container mt-5 mb-5">
         <div className="row justify-content-center">
           <div className="col-12 text-center mt-4">
-            <span className="custom-primary custom-border text-uppercase bg-white rounded-3 px-3 py-1 fw-medium mb-3 d-inline-block">
+            <span className="custom-primary custom-border text-uppercase rounded-3 px-3 py-1 fw-medium mb-3 d-inline-block">
               Portfolio
             </span>
-            <h2 className="display-5 fw-bold text-dark">
+            <h2 className="display-5 fw-bold">
               My Featured Works
             </h2>
           </div>

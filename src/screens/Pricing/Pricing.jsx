@@ -53,12 +53,12 @@ const Pricing = () => {
                         <div className="col-12 text-center">
 
                             {/* The "Portfolio" Badge */}
-                            <span className="custom-primary custom-border text-uppercase  bg-white rounded-3 px-3 py-1 fw-medium mb-3 d-inline-block" style={{ fontSize: '14px' }}>
+                            <span className="custom-primary custom-border text-uppercase rounded-3 px-3 py-1 fw-medium mb-3 d-inline-block" style={{ fontSize: '14px' }}>
                                 pricing
                             </span>
 
                             {/* The Main Heading */}
-                            <h2 className="display-5 fw-bold text-dark mb-3">
+                            <h2 className="display-5 fw-bold mb-3">
                                 My Pricing Plan
                             </h2>
 

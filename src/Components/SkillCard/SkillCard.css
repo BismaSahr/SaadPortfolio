@@ -82,3 +82,21 @@
   }
   .percentage-text { font-size: 1.4rem !important; }
 }
+
+/* Dark Mode Styles */
+body.dark-theme .skill-pill-container {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+body.dark-theme .icon-shape {
+  background-color: var(--secondary-bg);
+}
+
+body.dark-theme .skill-label {
+  color: var(--text-secondary) !important;
+}
+
+body.dark-theme .percentage-text {
+  color: var(--text-main);
+}

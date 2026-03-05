@@ -1,3 +1,10 @@
+.expertise-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: var(--secondary-bg);
+    transition: background-color 0.3s ease;
+}
+
 .experti {
     transition: all 0.3s ease-in-out;
     border: 1px solid transparent;
@@ -5,6 +12,7 @@
     text-decoration: none;
     display: block;
     height: 100%;
+    background-color: var(--card-bg);
 }
 
 .experti:hover {
@@ -24,12 +32,13 @@
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 15px;
-    color: #000;
+    color: var(--text-main);
 }
 
 .experti p {
     font-size: 0.9rem;
     line-height: 1.6;
+    color: var(--text-secondary);
 }
 
 .stroke_light_xl {
@@ -50,7 +59,20 @@
     -webkit-text-stroke: 1px #d6c6ff;
 }
 
-.expertise-section {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+/* Dark Mode Styles */
+body.dark-theme .expertise-section {
+    background-color: var(--secondary-bg);
+}
+
+body.dark-theme .expertise-section h2 {
+    color: var(--text-main);
+}
+
+/* make expertise card titles black when in dark mode */
+body.dark-theme .experti h3 {
+    color: #000000;
+}
+
+body.dark-theme .expertise-section .custom-primary {
+    color: var(--primary-color);
 }
