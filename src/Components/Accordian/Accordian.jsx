@@ -6,7 +6,7 @@ import Process1 from "../../assets/process1.png";
 
 const Accordian = () => {
   return (
-    <Container fluid className="p-5 pt-4 processes-section">
+    <Container fluid className="py-5 px-3 px-md-5 pt-4 processes-section">
       <div className="container mt-5">
         <div className="row justify-content-center">
           <div className="col-12 text-center mt-4">
