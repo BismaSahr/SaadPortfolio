@@ -327,6 +327,25 @@ body.dark-theme .massive-bubble-text {
   }
 }
 
+@media (max-width: 576px) {
+  .col-2-head {
+    font-size: 24px !important;
+  }
+
+  .col-2-p {
+    font-size: 14px;
+  }
+
+  .col-2-button {
+    width: 100% !important;
+    padding: 12px 20px !important;
+  }
+
+  .coaching-img {
+    height: 200px; /* Adjust height for smaller screens */
+  }
+}
+
 /* Dark Mode Styles */
 body.dark-theme .massive-bubble-text {
   -webkit-text-stroke: 1px var(--text-main);
