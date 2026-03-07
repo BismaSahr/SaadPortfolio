@@ -1,5 +1,6 @@
 .experti {
     transition: all 0.3s ease-in-out;
+    background-color: var(--card-bg);
     border: 1px solid transparent;
     overflow: hidden;
     text-decoration: none;
@@ -21,10 +22,10 @@
 }
 
 .experti h3 {
+    
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 15px;
-    color: #000;
 }
 
 .experti p {

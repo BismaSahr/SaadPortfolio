@@ -79,6 +79,7 @@ body.dark-theme .testimonials-section h2.display-5.fw-bold {
     cursor: grab;
     scrollbar-width: none;
     margin-bottom: 24px;
+    touch-action: pan-y;
 }
 
 .testimonial-ticker-container::-webkit-scrollbar {

@@ -105,3 +105,19 @@ body {
   overflow-x: hidden;
   width: 100%;
 }
+
+.text-theme-main {
+  color: var(--text-main) !important;
+}
+
+.text-theme-secondary {
+  color: var(--text-secondary) !important;
+}
+
+.bg-theme-main {
+  background-color: var(--bg-color) !important;
+}
+
+.bg-theme-secondary {
+  background-color: var(--secondary-bg) !important;
+}
