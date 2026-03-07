@@ -36,7 +36,7 @@ const HeroSection = () => {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 1, ease: "easeOut" }}
                 >
-                    <p className="fs-5">Freelancer</p>
+                    <p className="fs-5 fw-bold">Freelancer</p>
                     <p className="fs-5 fw-bold">Expert Web Designer, Developer & Consultant</p>
                 </motion.div>
 
