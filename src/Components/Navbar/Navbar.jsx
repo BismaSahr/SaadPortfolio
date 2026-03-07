@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -13,6 +14,10 @@ import dotMenuImg from '../../assets/dot-menu.png';
 function NavBar() {
   const expand = 'lg';
   const { isDarkMode, toggleTheme } = useTheme();
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   const handleTalkClick = () => {
     const contactSection = document.getElementById('contact');
@@ -31,7 +36,7 @@ function NavBar() {
         </Navbar.Brand>
 
         <div className="d-flex align-items-center d-lg-none">
-          <button 
+          <button
             className="theme-toggle-mobile me-3"
             onClick={toggleTheme}
             style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
@@ -40,7 +45,7 @@ function NavBar() {
             <i className={isDarkMode ? "bi bi-sun-fill" : "bi bi-moon-stars-fill"}></i>
           </button>
 
-          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} className="border-0 shadow-none p-0">
+          <Navbar.Toggle onClick={handleShow} aria-controls={`offcanvasNavbar-expand-${expand}`} className="border-0 shadow-none p-0">
             <div className="custom-toggle">
               <img src={dotMenuImg} alt="Menu" className="dot-menu-icon" />
             </div>
@@ -51,6 +56,9 @@ function NavBar() {
           id={`offcanvasNavbar-expand-${expand}`}
           aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
           placement="end"
+          show={show}
+          onHide={handleClose}
+          restoreFocus={false}
         >
           <Offcanvas.Header closeButton>
             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`} className="brand d-flex align-items-center">
@@ -73,19 +81,19 @@ function NavBar() {
             </Form>
 
             <Nav className="mx-auto nav-center">
-              <Nav.Link href="#home" className="links">Home</Nav.Link>
-              <Nav.Link href="#about" className="links">About</Nav.Link>
-              <Nav.Link href="#expertise" className="links">Expertise</Nav.Link>
-              <Nav.Link href="#processes" className="links">Processes</Nav.Link>
-              <Nav.Link href="#projects" className="links">Projects</Nav.Link>
-              <Nav.Link href="#testimonals" className="links">Testimonials</Nav.Link>
-              <Nav.Link href="#faqs" className="links">FAQs</Nav.Link>
-              <Nav.Link href="#clients" className="links">Clients</Nav.Link>
-              <Nav.Link href="#contact" className="links">Contact</Nav.Link>
+              <Nav.Link href="#home" className="links" onClick={handleClose}>Home</Nav.Link>
+              <Nav.Link href="#about" className="links" onClick={handleClose}>About</Nav.Link>
+              <Nav.Link href="#expertise" className="links" onClick={handleClose}>Expertise</Nav.Link>
+              <Nav.Link href="#processes" className="links" onClick={handleClose}>Processes</Nav.Link>
+              <Nav.Link href="#projects" className="links" onClick={handleClose}>Projects</Nav.Link>
+              <Nav.Link href="#testimonals" className="links" onClick={handleClose}>Testimonials</Nav.Link>
+              <Nav.Link href="#faqs" className="links" onClick={handleClose}>FAQs</Nav.Link>
+              <Nav.Link href="#clients" className="links" onClick={handleClose}>Clients</Nav.Link>
+              <Nav.Link href="#contact" className="links" onClick={handleClose}>Contact</Nav.Link>
             </Nav>
 
             <div className="d-flex align-items-center mt-3 mt-lg-0">
-              <button 
+              <button
                 className="theme-toggle-desktop d-none d-lg-flex me-4"
                 onClick={toggleTheme}
                 style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}

@@ -342,7 +342,8 @@ body.dark-theme .massive-bubble-text {
   }
 
   .coaching-img {
-    height: 200px; /* Adjust height for smaller screens */
+    height: 200px;
+    /* Adjust height for smaller screens */
   }
 }
 
@@ -373,3 +374,100 @@ body.dark-theme .accordion-item {
   border-bottom-color: var(--border-color) !important;
 }
 
+/* WhatsApp Modal Styles */
+.whatsapp-modal .modal-content {
+  border-radius: 24px;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  background: var(--card-bg, #ffffff);
+}
+
+.whatsapp-modal .modal-header .btn-close {
+  background-color: #f8f9fa;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 10px;
+  opacity: 0.8;
+  transition: all 0.2s ease;
+}
+
+.whatsapp-modal .modal-header .btn-close:hover {
+  opacity: 1;
+  background-color: #e9ecef;
+  transform: rotate(90deg);
+}
+
+.whatsapp-icon-circle {
+  width: 100px;
+  height: 100px;
+  background: #25D366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  margin: 0 auto;
+  box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+  animation: pulse-whatsapp 2s infinite;
+}
+
+@keyframes pulse-whatsapp {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4);
+  }
+
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.modal-title {
+  color: var(--text-main, #222222);
+  font-size: 1.8rem;
+}
+
+.modal-text {
+  color: var(--text-secondary, #666666);
+  font-size: 1.1rem;
+}
+
+.whatsapp-number-box {
+  background: rgba(128, 84, 255, 0.05);
+  border: 1px dashed var(--primary-color, #8054FF);
+}
+
+.whatsapp-btn {
+  background-color: var(--primary-color, #8054FF) !important;
+  border: none !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 15px rgba(128, 84, 255, 0.3) !important;
+}
+
+.whatsapp-btn:hover {
+  background-color: #6a40e6 !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 25px rgba(128, 84, 255, 0.4) !important;
+}
+
+/* Dark theme overrides for modal if needed */
+body.dark-theme .whatsapp-modal .modal-content {
+  background: #1a1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme .whatsapp-number-box {
+  background: rgba(128, 84, 255, 0.1);
+}
+
+body.dark-theme .modal-header .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}

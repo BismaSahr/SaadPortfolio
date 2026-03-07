@@ -20,7 +20,7 @@ const HeroSection = () => {
     const alsonX = useTransform(scrollYProgress, [0.6, 1], [-100, 200]);
 
     return (
-        <section ref={targetRef} style={{ position: "relative", overflow: "hidden", padding: "20px 0px 0px clamp(15px, 6vw, 60px)" }}>
+        <section id="home" ref={targetRef} style={{ position: "relative", overflow: "hidden", padding: "20px 0px 0px clamp(15px, 6vw, 60px)" }}>
             <Container>
                 <motion.p
                     style={{ x: uiuxX }}
