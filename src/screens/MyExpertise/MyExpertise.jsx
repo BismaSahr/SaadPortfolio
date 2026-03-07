@@ -31,14 +31,14 @@ const expertiseData = [
 
 const MyExpertise = () => {
     return (
-        <Container fluid className="expertise-section px-lg-5" id='expertise'>
-            <div className="container mb-5">
+        <Container fluid className="expertise-section px-lg-5 bg-theme-secondary text-theme-main">
+            <div className="container mb-0">
                 <div className="row justify-content-center">
                     <div className="col-12 text-center mt-4">
-                        <span className="custom-primary custom-border text-uppercase bg-white rounded-3 px-3 py-1 fw-medium mb-3 d-inline-block">
+                        <span className="custom-primary custom-border text-uppercase bg-theme rounded-3 px-3 py-1 fw-medium mb-3 d-inline-block">
                             services
                         </span>
-                        <h2 className="display-5 fw-bold">
+                        <h2 className="display-5 fw-bold text-theme-main">
                             My Expertise
                         </h2>
                     </div>
@@ -48,9 +48,9 @@ const MyExpertise = () => {
             <Row className="g-4 justify-content-center mx-0">
                 {expertiseData.map((item, index) => (
                     <Col lg={3} md={6} sm={12} key={index} className="mb-4">
-                        <a href="#" className="experti p-4 bg-white rounded-4 hover-up position-relative z-1 shadow text-decoration-none">
+                        <a href="#" className="experti p-4 bg-theme rounded-4 hover-up position-relative z-1 shadow text-decoration-none">
                             <img src={item.icon} alt={item.title} />
-                            <h3 className="position-relative z-1">{item.title}</h3>
+                            <h3 className="position-relative z-1 text-theme-main">{item.title}</h3>
                             <p className="text-secondary position-relative z-1">{item.description}</p>
                             <span className="stroke_light_xl position-absolute top-0 end-0 lh-1 z-0">{item.id}</span>
                         </a>
