@@ -37,7 +37,6 @@ const MyProjects = () => {
 
       const onDrag = (e) => {
         if (!isDown) return;
-        e.preventDefault();
         const x = (e.pageX || e.touches[0].pageX) - slider.offsetLeft;
         const walk = (x - startX) * 1.5;
         slider.scrollLeft = scrollLeft - walk;

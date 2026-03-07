@@ -61,7 +61,7 @@ const Contact = () => {
                                 </Col>
                                 <Col xs={12} className="mt-4">
                                     <Button type="submit" className="contact-btn">
-                                        Sign in
+                                        Send
                                     </Button>
                                 </Col>
                             </Row>

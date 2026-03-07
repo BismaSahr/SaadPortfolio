@@ -15,6 +15,7 @@
     z-index: 2;
     cursor: grab;
     scrollbar-width: none;
+    touch-action: pan-y;
 }
 
 .ticker-container::-webkit-scrollbar {
@@ -107,11 +108,34 @@
 
 @media (max-width: 992px) {
     .stroke-text {
-        font-size: 4rem;
+        font-size: clamp(3rem, 8vw, 4rem);
+        letter-spacing: 5px;
     }
 
     .ticker-item img {
         width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .stroke-text {
+        font-size: clamp(2rem, 10vw, 3rem);
+        letter-spacing: 2px;
+    }
+
+    .ticker-item img {
+        width: 250px;
+    }
+}
+
+@media (max-width: 576px) {
+    .stroke-text {
+        font-size: clamp(1.5rem, 8vw, 2rem);
+        letter-spacing: 1px;
+    }
+
+    .ticker-item img {
+        width: 200px;
     }
 }
 
