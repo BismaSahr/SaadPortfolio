@@ -40,7 +40,7 @@
 .heroImg {
   z-index: 2;
   position: absolute;
-  top: 150px;
+  bottom: 0;
   right: 70px;
   height: clamp(550px, 60vw, 1025px);
   width: auto;
@@ -55,6 +55,7 @@
 
 .hero-tag p {
   color: var(--text-main);
+  margin-bottom: 5px;
 }
 
 body.dark-theme .hero-tag p {
@@ -89,7 +90,7 @@ body.dark-theme .hero-tag p {
   .heroImg {
     position: relative;
     display: block;
-    margin: 40px auto;
+    margin: 40px auto 0 auto;
     top: auto;
     right: auto;
     height: clamp(280px, 60vw, 420px);
