@@ -152,7 +152,7 @@ body.dark-theme .massive-bubble-text {
   max-height: 7.5rem;
   /* adjust to hide descenders */
   /* also limit width slightly so only a small portion of the end is clipped */
-  max-width: 85%;
+  max-width: 100%;
 }
 
 .outer-header-custom .accordion-button::after {
@@ -184,7 +184,7 @@ body.dark-theme .massive-bubble-text {
   padding-bottom: 2.5rem !important;
   max-height: none;
   /* allow full height when active */
-  max-width: none;
+  max-width: 100%;
   /* show full text width when active */
 }
 
@@ -271,9 +271,10 @@ body.dark-theme .massive-bubble-text {
   }
 
   .massive-bubble-text {
-    font-size: 3.5rem !important;
-    line-height: 1 !important;
+    font-size: 2.2rem !important;
+    line-height: 1.2 !important;
     -webkit-text-stroke: 0.5px #222222;
+    margin-bottom: 0;
   }
 
   .outer-header-custom .accordion-button {
@@ -300,6 +301,7 @@ body.dark-theme .massive-bubble-text {
   .outer-header-custom .accordion-button:hover,
   .outer-header-custom .accordion-button:not(.collapsed) {
     padding-bottom: 1.5rem !important;
+    max-height: none;
   }
 
   .coaching-head {
@@ -344,6 +346,10 @@ body.dark-theme .massive-bubble-text {
   .coaching-img {
     height: 200px;
     /* Adjust height for smaller screens */
+  }
+
+  .massive-bubble-text {
+    font-size: 1.8rem !important;
   }
 }
 
