@@ -177,12 +177,12 @@ const Testimonials = () => {
             <div className="testimonials-header mt-3">
               <Row>
                 <Col md={6} xs={12} className="d-flex flex-column justify-content-center text-center text-md-start mb-4 mb-md-0">
-                  <h2 className="testimonials-title">We’re not the only ones<br className="d-none d-md-block" /> who love TaxAct®.</h2>
-                  <p className="testimonials-subtitle pe-md-4">See what real filers have to say about their experience with TaxAct—and why so many trust us year after year.</p>
+                  <h2 className="testimonials-title">I have more than 200<br className="d-none d-md-block" />clients happier with my services®.</h2>
+                  <p className="testimonials-subtitle pe-md-4">See what real business owners (B2C, B2B) have to say about their experience with me and why so many trust me year after year.</p>
                 </Col>
                 <Col md={6} xs={12}>
                   <div className="rating-box d-flex flex-column justify-content-center align-items-center">
-                    <div className="rating-score text-center">4.4/5</div>
+                    <div className="rating-score text-center">4.8/5</div>
                     <div className="rating-stars text-center">
                       <FaStar />
                       <FaStar />
@@ -191,7 +191,7 @@ const Testimonials = () => {
                       <FaStarHalfAlt />
                     </div>
                     <div className="rating-reviews-link text-center">
-                      <a href="#">32,429+ Reviews</a>
+                      <a href="#">200+ Reviews</a>
                     </div>
                   </div>
                 </Col>

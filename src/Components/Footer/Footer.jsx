@@ -2,6 +2,12 @@ import React from 'react';
 import './Footer.css';
 
 const Footer = () => {
+    const handleTalkClick = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <footer className="footer-section bg-primary-custom text-white pt-120">
       <div className="container">
@@ -42,7 +48,7 @@ const Footer = () => {
         {/* Lets Talk Button Row */}
         <div className="row">
           <div className="col-12 d-flex justify-content-end">
-            <a href="/contact" className="lets-talk-btn">
+            <a onClick={handleTalkClick} className="lets-talk-btn">
               Let’s talk
             </a>
           </div>
@@ -66,7 +72,7 @@ const Footer = () => {
                 Dribbble <i className="bi bi-dribbble ms-auto"></i>
               </a>
 
-              <a href="#" className="social-item">
+              <a href="https://github.com/saadk738" className="social-item">
                 GitHub  <i className="bi bi-github ms-auto"></i>
               </a>
 
