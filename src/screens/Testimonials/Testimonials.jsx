@@ -25,13 +25,13 @@ const row1Reviews = [
   {
     title: "Easy To Communicate",
     text: `"Saad guides you through with ease. His consultancy is way more good than what we expected. Making sure you don’t miss anything. Highly recommend. "`,
-    user: "@Erica M.",
+    user: "Erica M.",
     date: "Nov 19, 2021"
   },
   {
     title: "Great — Easy To Work With",
     text: `"Great - - - Saad is very easy to work with all the time. He approaches the app coding in a very unique way."`,
-    user: "@Scott D.",
+    user: "Scott D.",
     date: "Oct 21, 2018"
   }
 ];
@@ -40,31 +40,31 @@ const row2Reviews = [
   {
     title: "Easy to use",
     text: `"I have been using Saad’s consultancy skills since 2017 whenever I need to clarification in my business and very happy with it. He knows the trend, the strategies very well. Highly recommended Saad to everyone out there."`,
-    user: "@Mark, Founder Deephow",
+    user: "Mark, Founder Deephow",
     date: "Feb 21, 2026"
   },
   {
     title: "AI Automation",
     text: `"Saad build a voice agent for us which was very easy to use and adapt. We have used this for years and I would recommend it to anyone. Great work Saad…."`,
-    user: "@SkipperD",
+    user: "SkipperD",
     date: "May 04, 2022"
   },
   {
     title: "Website Expert",
     text: `"I thought at first it would be just consultancy but later on realized Saad is a person having design and development skills as well. He is an expert throughout the areas he is in. Highly recommended."`,
-    user: "@Allen P.",
+    user: "Allen P.",
     date: "Aug 14, 2016"
   },
   {
     title: "Faster and easy",
     text: `"I hired Saad for my mobile app design and now every year he makes changes to it and have already got that converting big and I will not change him for sure. I’m loving my app and his skillset."`,
-    user: "@Poncho I.",
+    user: "Poncho I.",
     date: "Sept 16, 2025"
   },
   {
     title: "Great E-commerce Store (Shopify) Skills",
     text: `"My wife and I hired Saad couple of months back for our E-commerce store on Shopify and this took a button in couple of weeks and Saad is definitely someone who made it simple and perfect. No confusion. We love it!"`,
-    user: "@Bob & Emma",
+    user: "Bob & Emma",
     date: "April 07, 2024"
   }
 ];
@@ -177,7 +177,7 @@ const Testimonials = () => {
             <div className="testimonials-header mt-3">
               <Row>
                 <Col md={6} xs={12} className="d-flex flex-column justify-content-center text-center text-md-start mb-4 mb-md-0">
-                  <h2 className="testimonials-title">I have more than 200<br className="d-none d-md-block" />clients happier with my services®.</h2>
+                  <h2 className="testimonials-title">I have more than 200<br className="d-none d-md-block" />clients happier with my services.</h2>
                   <p className="testimonials-subtitle pe-md-4">See what real business owners (B2C, B2B) have to say about their experience with me and why so many trust me year after year.</p>
                 </Col>
                 <Col md={6} xs={12}>

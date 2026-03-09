@@ -16,7 +16,7 @@
 }
 
 .footer-title {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     font-weight: 600;
     color: #fff;
 }
@@ -26,8 +26,16 @@
     transition: 0.3s;
 }
 
+.footer-contact-link {
+    font-size: 1.15rem;
+}
+
+.footer-contact-link i {
+    font-size: 1.3rem;
+}
+
 .linkCol:hover {
-    padding-left: 5px;
+    transform: translateX(5px);
 }
 
 /* Lets Talk Glass Circle */
@@ -50,6 +58,7 @@
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .lets-talk-btn:hover {
@@ -64,6 +73,7 @@
     line-height: 1;
     letter-spacing: -3px;
     color: #fff;
+    white-space: nowrap;
 }
 
 /* Social Bar Grid */

@@ -37,7 +37,7 @@ const HeroSection = () => {
                     transition={{ duration: 1, ease: "easeOut" }}
                 >
                     <p className="fs-5 fw-bold">Freelancer</p>
-                    <p className="fs-5 fw-bold">Expert Web Designer, Developer & Consultant</p>
+                    <p className="fs-5 fw-bold">Expert Web, Mobile & AI Designer, Developer & Consultant</p>
                 </motion.div>
 
                 {/* <motion.div

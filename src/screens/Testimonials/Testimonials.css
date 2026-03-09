@@ -105,6 +105,8 @@ body.dark-theme .testimonials-section h2.display-5.fw-bold {
 
 .testimonial-ticker-item {
     flex-shrink: 0;
+    display: flex;
+    align-items: stretch;
 }
 
 /* Testimonial Card */
@@ -113,7 +115,8 @@ body.dark-theme .testimonials-section h2.display-5.fw-bold {
     border-radius: 24px;
     padding: 35px 30px;
     width: 370px;
-    height: 300px;
+    min-height: 300px;
+    height: auto;
     display: flex;
     flex-direction: column;
     white-space: normal;

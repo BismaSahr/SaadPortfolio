@@ -44,10 +44,12 @@
 }
 
 .ticker-item img {
-    width: 450px;
-    height: auto;
+    width: 550px;
+    height: 300px;
+    object-fit: cover;
     display: block;
     transition: transform 0.3s ease;
+    border-radius: 12px;
 }
 
 .ticker-item img:hover {

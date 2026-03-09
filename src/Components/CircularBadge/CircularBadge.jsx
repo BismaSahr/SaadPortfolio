@@ -7,8 +7,16 @@ const CircularBadge = () => {
     const text = "PROJECT  HIRE ME FOR YOUR NEXT  ";
     const chars = text.split("");
 
+
+    const handleTalkClick = () => {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
-        <div className="circular-badge-container d-none d-lg-flex mt-3">
+        <div onClick={handleTalkClick} className="circular-badge-container d-none d-lg-flex mt-3">
             <div className="circular-badge">
                 <div className="badge-text-wrapper">
                     {chars.map((char, i) => (

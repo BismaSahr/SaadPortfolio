@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.css';
 
 const Footer = () => {
-    const handleTalkClick = () => {
+  const handleTalkClick = () => {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
@@ -18,36 +18,38 @@ const Footer = () => {
           {/* Left Column */}
           <div className="col-lg-6 mb-4 mb-lg-0">
             <h5 className="brand-statement pe-lg-5">
-              For more than 8 years, I have been experienced in Web, Mobile App Design & Development, AI Development as well as Consultancy for all of them. I have always keen to bring brands to life. 
+              For more than 8 years, I have been experienced in Web, Mobile App Design & Development, AI Development as well as Consultancy for all of them. I have always keen to bring brands to life.
             </h5>
           </div>
 
           {/* Right Column */}
-          <div className="col-lg-5 offset-lg-1 my-auto">
-            <h4 className="footer-title mb-4">Get in touch</h4>
+          <div className="col-lg-5 offset-lg-1 my-auto d-flex flex-column align-items-start align-items-lg-end mt-5 mt-lg-0">
+            <div className="d-flex flex-column align-items-start">
+              <h4 className="footer-title mb-4">Get in touch</h4>
 
-            <a href="tel:+12345678900" className="linkCol d-flex mb-3 text-decoration-none">
-              <i className="bi bi-telephone-fill me-3"></i>
-              <span>+92 3201220638</span>
-            </a>
+              <a href="tel:+12345678900" className="linkCol d-inline-flex align-items-center mb-3 text-decoration-none footer-contact-link">
+                <i className="bi bi-telephone-fill me-3"></i>
+                <span>+92 3201220638</span>
+              </a>
 
-            <a href="mailto:hello@inexa.com" className="linkCol d-flex mb-3 text-decoration-none">
-              <i className="bi bi-envelope-paper-fill me-3"></i>
-              <span>radat738@gmail.com</span>
-            </a>
+              <a href="mailto:radat738@gmail.com" className="linkCol d-inline-flex align-items-center mb-3 text-decoration-none footer-contact-link">
+                <i className="bi bi-envelope-paper-fill me-3"></i>
+                <span>radat738@gmail.com</span>
+              </a>
 
-            <p className="d-flex mb-0">
-              <i className="bi bi-geo-alt-fill me-3"></i>
-              <span>
-                Karachi, Sindh, Pakistan
-              </span>
-            </p>
+              <p className="d-inline-flex align-items-center mb-0 footer-contact-link text-white m-0">
+                <i className="bi bi-geo-alt-fill me-3"></i>
+                <span>
+                  Karachi, Sindh, Pakistan
+                </span>
+              </p>
+            </div>
           </div>
         </div>
 
         {/* Lets Talk Button Row */}
         <div className="row">
-          <div className="col-12 d-flex justify-content-end">
+          <div className="col-12 d-flex justify-content-center">
             <a onClick={handleTalkClick} className="lets-talk-btn">
               Let’s talk
             </a>

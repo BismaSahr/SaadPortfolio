@@ -8,7 +8,8 @@
     /* Pulls next content up */
     display: flex;
     justify-content: center;
-    pointer-events: none;
+    cursor: pointer;
+    pointer-events: auto;
     /* Allows clicking through the container edges */
 }
 

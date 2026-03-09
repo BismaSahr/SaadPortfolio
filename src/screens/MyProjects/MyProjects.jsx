@@ -5,10 +5,11 @@ import project2 from '../../assets/img-portfolio-3-4.jpeg';
 import project3 from '../../assets/img-portfolio-3-5.jpeg';
 import project4 from '../../assets/img-portfolio-3-6.jpeg';
 import project5 from '../../assets/img-portfolio-3-7.jpeg';
+import project6 from '../../assets/portfolio1.jpeg';
 
 const MyProjects = () => {
-  const row1Images = [project1, project2, project3, project4];
-  const row2Images = [project5, project2, project4, project5];
+  const row1Images = [project1, project2, project3, project6];
+  const row2Images = [project2, project6, project3, project1];
 
   const TickerRow = ({ images, directionClass }) => {
     const tickerRef = useRef(null);
