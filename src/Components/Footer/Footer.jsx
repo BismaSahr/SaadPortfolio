@@ -12,30 +12,28 @@ const Footer = () => {
           {/* Left Column */}
           <div className="col-lg-6 mb-4 mb-lg-0">
             <h5 className="brand-statement pe-lg-5">
-              For more than 10 years, we have been using graphic design & websites
-              to bring brands to life. Inexa is always on the lookout for talent.
+              For more than 8 years, I have been experienced in Web, Mobile App Design & Development, AI Development as well as Consultancy for all of them. I have always keen to bring brands to life. 
             </h5>
           </div>
 
           {/* Right Column */}
-          <div className="col-lg-5 offset-lg-1">
+          <div className="col-lg-5 offset-lg-1 my-auto">
             <h4 className="footer-title mb-4">Get in touch</h4>
 
             <a href="tel:+12345678900" className="linkCol d-flex mb-3 text-decoration-none">
               <i className="bi bi-telephone-fill me-3"></i>
-              <span>+123 (456) 789 00</span>
+              <span>+92 3201220638</span>
             </a>
 
             <a href="mailto:hello@inexa.com" className="linkCol d-flex mb-3 text-decoration-none">
               <i className="bi bi-envelope-paper-fill me-3"></i>
-              <span>hello@inexa.com</span>
+              <span>radat738@gmail.com</span>
             </a>
 
             <p className="d-flex mb-0">
               <i className="bi bi-geo-alt-fill me-3"></i>
               <span>
-                12/A, New Booston Tower,<br />
-                NYC, USA
+                Karachi, Sindh, Pakistan
               </span>
             </p>
           </div>

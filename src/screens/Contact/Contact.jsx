@@ -16,9 +16,9 @@ const Contact = () => {
                         <div className="custom-primary fw-normal text-uppercase text-decoration-underline small mb-3">
                             Contact Me
                         </div>
-                        <h1 className="fw-bold display-5 mb-3">Have any question?</h1>
+                        <h1 className="fw-bold display-5 mb-3">Need Help With Project?</h1>
                         <p className="mb-5 text-muted">
-                            You may also realize cost savings from your energy efficient choices in your custom home.
+                            Plese feel free to type in your description about the project and I’ll reach out to you within 0-4 hours of time.
                         </p>
 
                         <Form>
@@ -43,7 +43,7 @@ const Contact = () => {
                                         <Form.Control
                                             type="email"
                                             className="contact-input contact-bg-input py-3"
-                                            placeholder="info@"
+                                            placeholder="Your email"
                                         />
                                     </InputGroup>
                                 </Col>
@@ -61,7 +61,7 @@ const Contact = () => {
                                 </Col>
                                 <Col xs={12} className="mt-4">
                                     <Button type="submit" className="contact-btn">
-                                        Send
+                                        Submit
                                     </Button>
                                 </Col>
                             </Row>

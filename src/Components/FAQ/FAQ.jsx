@@ -7,16 +7,28 @@ import CircularBadge from "../CircularBadge/CircularBadge";
 const FAQ = () => {
     const faqData = [
         {
-            question: "What is the main focus of your portfolio?",
-            answer: "You may also realize cost savings from your energy efficient choices in your custom home. Federal tax credits for some green materials can allow you to deduct as much."
+            question: "Do you offer consultancy before starting a project?",
+            answer: "Yes. I offer technical and strategic consultancy to help businesses define their product roadmap, choose the right technologies, and plan scalable digital solutions before development begins."
         },
         {
-            question: "Will you include a blog or other written content?",
-            answer: "Yes, I plan to integrate a blog section to share insights on UI/UX trends, development tips, and project case studies to provide more value to visitors."
+            question: "Do you build custom websites or use CMS platforms?",
+            answer: "Both. I develop fully custom websites as well as CMS-based solutions using platforms that allow easy content management. The approach depends on your business needs, scalability requirements, and budget."
         },
         {
-            question: "How frequently will you update your portfolio?",
-            answer: "I aim to update my portfolio at least once a month with new projects, experiments, and updated case studies to reflect my latest skills and growth."
+            question: "Please Tell us which CMS-platform & custom build techstacks you use to develop websites?",
+            answer: "For CMS I use WordPress, Shopify, Webflow, Wix, Squarespace and for the Custom build I use Javascript frameworks like ReactJs, NextJs for front-end and NodeJs, ExpressJs, NuxtJs for back-end. I use Firebase, MySQL, PostgreSQL, MongoDB as Database."
+        },
+        {
+            question: "Can you develop mobile apps for both iOS and Android?",
+            answer: "Yes. I build cross-platform apps as well as native applications for iOS and Android, depending on the project requirements and performance goals. For cross-platform I use React-Native or Flutter and for native iOS apps I use Swift and for native android apps i use kotlin."
+        },
+        {
+            question: "What kind of AI solutions do you build?",
+            answer: " I develop AI-powered chatbots, automation systems, and workflow integrations using modern tools and platforms like n8n, helping businesses automate processes, improve customer support, and increase efficiency"
+        },
+        {
+            question: "Do you provide support after the project is completed?",
+            answer: " Yes. I offer ongoing support, maintenance, and updates to ensure your website, app, or AI system continues to perform optimally."
         }
     ];
 

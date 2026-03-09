@@ -6,66 +6,66 @@ import './Testimonials.css';
 const row1Reviews = [
   {
     title: "Completely satisfied and highly recommend",
-    text: `"Completely satisfied.... Third straight year with TaxAct and will be back again next year."`,
-    user: "@HappyFiler",
-    date: "Feb 27, 2026"
+    text: `"Completely satisfied….. Third straight year with Saad and will continue working on our AI product with him next year as well."`,
+    user: "@Mark P.",
+    date: "Dec 31, 2025"
   },
   {
     title: "Worth every penny",
-    text: `"This is an intuitive, user-friendly tax filing product - absolutely wonderful to way to file year after year."`,
-    user: "@Guinness",
-    date: "Feb 27, 2026"
+    text: `"He is an absolute WordPress Expert, absolutely wonderful to have him in the team and continuing work year after year. "`,
+    user: "@ Folakemi A.",
+    date: "Feb 27, 2023"
   },
   {
     title: "EASY",
-    text: `"Super easy and fast. Questions were all answered. Good price."`,
-    user: "@Sanhenry",
-    date: "Feb 27, 2026"
+    text: `"Saad was super easy and fast. Questions were all answered. Good price."`,
+    user: "@Mohammed K.",
+    date: "June 02, 2019"
   },
   {
-    title: "Easy to use",
-    text: `"The program guides you through with ease. Making sure you don't miss anything. Highly recommend."`,
-    user: "@MikeCR",
-    date: "Feb 27, 2026"
+    title: "Easy To Communicate",
+    text: `"Saad guides you through with ease. His consultancy is way more good than what we expected. Making sure you don’t miss anything. Highly recommend. "`,
+    user: "@Erica M.",
+    date: "Nov 19, 2021"
   },
   {
-    title: "Great — Easy to read questions",
-    text: `"Great --- Easy to read questions and E-file was easy....."`,
-    user: "@arkfatboy",
-    date: "Feb 27, 2026"
+    title: "Great — Easy To Work With",
+    text: `"Great - - - Saad is very easy to work with all the time. He approaches the app coding in a very unique way."`,
+    user: "@Scott D.",
+    date: "Oct 21, 2018"
   }
 ];
 
 const row2Reviews = [
   {
     title: "Easy to use",
-    text: `"I have been using tax act since 2012 and very happy with it"`,
-    user: "@Jib72",
-    date: "Feb 27, 2026"
+    text: `"I have been using Saad’s consultancy skills since 2017 whenever I need to clarification in my business and very happy with it. He knows the trend, the strategies very well. Highly recommended Saad to everyone out there."`,
+    user: "@Mark, Founder Deephow",
+    date: "Feb 21, 2026"
   },
   {
-    title: "Taxes",
-    text: `"Very easy to use. We have used this for years and I would recommend it to anyone."`,
+    title: "AI Automation",
+    text: `"Saad build a voice agent for us which was very easy to use and adapt. We have used this for years and I would recommend it to anyone. Great work Saad…."`,
     user: "@SkipperD",
-    date: "Feb 27, 2026"
+    date: "May 04, 2022"
   },
   {
-    title: "Great ease",
-    text: `"Thought it would be free file but still like the service"`,
-    user: "@Mark R",
-    date: "Feb 27, 2026"
+    title: "Website Expert",
+    text: `"I thought at first it would be just consultancy but later on realized Saad is a person having design and development skills as well. He is an expert throughout the areas he is in. Highly recommended."`,
+    user: "@Allen P.",
+    date: "Aug 14, 2016"
   },
   {
     title: "Faster and easy",
-    text: `"I use taxAc every year and I don't change it, I love it"`,
-    user: "@Poncho",
-    date: "Feb 27, 2026"
+    text: `"I hired Saad for my mobile app design and now every year he makes changes to it and have already got that converting big and I will not change him for sure. I’m loving my app and his skillset."`,
+    user: "@Poncho I.",
+    date: "Sept 16, 2025"
   },
   {
-    title: "great app",
-    text: `"My wife did our taxes took a button in an hour and tax act is definitely the way simple, no confusion.I love it."`,
-    user: "@tax25",
-    date: "Feb 27, 2026"
+    title: "Great E-commerce Store (Shopify) Skills",
+    text: `"My wife and I hired Saad couple of months back for our E-commerce store on Shopify and this took a button in couple of weeks and Saad is definitely someone who made it simple and perfect. No confusion. We love it!"`,
+    user: "@Bob & Emma",
+    date: "April 07, 2024"
   }
 ];
 
