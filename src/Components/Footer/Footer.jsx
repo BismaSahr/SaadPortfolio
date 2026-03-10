@@ -18,7 +18,7 @@ const Footer = () => {
           {/* Left Column */}
           <div className="col-lg-6 mb-4 mb-lg-0">
             <h5 className="brand-statement pe-lg-5">
-              For more than 8 years, I have been experienced in Web, Mobile App Design & Development, AI Development as well as Consultancy for all of them. I have always keen to bring brands to life.
+              For more than 8 years, I have been experienced in Web, Mobile App Design & Development, AI Development as well as Consultancy for all of them. I have always been keen to bring brands to life.
             </h5>
           </div>
 
@@ -48,13 +48,13 @@ const Footer = () => {
         </div>
 
         {/* Lets Talk Button Row */}
-        <div className="row">
+        {/* <div className="row">
           <div className="col-12 d-flex justify-content-center">
             <a onClick={handleTalkClick} className="lets-talk-btn">
               Let’s talk
             </a>
           </div>
-        </div>
+        </div> */}
 
         {/* Huge Name */}
         <div className="position-relative py-5 mt-lg-5 text-center">
@@ -74,15 +74,15 @@ const Footer = () => {
                 Dribbble <i className="bi bi-dribbble ms-auto"></i>
               </a>
 
-              <a href="https://github.com/saadk738" className="social-item">
+              <a href="https://github.com/saadk738" className="social-item" target="_blank">
                 GitHub  <i className="bi bi-github ms-auto"></i>
               </a>
 
-              <a href="#" className="social-item">
+              <a href="https://www.linkedin.com/in/saad-ullah-khan-0122b728b/" className="social-item" target="_blank">
                 Linkedin <i className="bi bi-linkedin ms-auto"></i>
               </a>
 
-              <a href="#" className="social-item">
+              <a href="#" className="social-item" >
                 Youtube <i className="bi bi-youtube ms-auto"></i>
               </a>
 

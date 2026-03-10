@@ -1,25 +1,25 @@
 import React, { useRef, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
+import { FaStar } from 'react-icons/fa';
 import './Testimonials.css';
 
 const row1Reviews = [
   {
     title: "Completely satisfied and highly recommend",
     text: `"Completely satisfied….. Third straight year with Saad and will continue working on our AI product with him next year as well."`,
-    user: "@Mark P.",
+    user: "Mark P.",
     date: "Dec 31, 2025"
   },
   {
     title: "Worth every penny",
     text: `"He is an absolute WordPress Expert, absolutely wonderful to have him in the team and continuing work year after year. "`,
-    user: "@ Folakemi A.",
+    user: "Folakemi A.",
     date: "Feb 27, 2023"
   },
   {
     title: "EASY",
     text: `"Saad was super easy and fast. Questions were all answered. Good price."`,
-    user: "@Mohammed K.",
+    user: "Mohammed K.",
     date: "June 02, 2019"
   },
   {
@@ -188,7 +188,10 @@ const Testimonials = () => {
                       <FaStar />
                       <FaStar />
                       <FaStar />
-                      <FaStarHalfAlt />
+                      <div style={{ position: 'relative', display: 'inline-flex' }}>
+                        <FaStar style={{ opacity: 0.3 }} />
+                        <FaStar style={{ position: 'absolute', top: 0, left: 0, clipPath: 'inset(0 40% 0 0)' }} />
+                      </div>
                     </div>
                     <div className="rating-reviews-link text-center">
                       <a href="#">200+ Reviews</a>

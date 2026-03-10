@@ -40,7 +40,7 @@ const FAQ = () => {
                     <Col lg={7}>
                         <div className="faq-content pe-lg-5">
                             <span className="custom-primary custom-border text-uppercase bg-white rounded-3 px-3 py-1 fw-medium mb-3 d-inline-block">
-                                FAQ Page
+                                Frequently Asked Questions
                             </span>
                             <h2 className="fhead fw-bold mb-5">
                                 Get every single <br /> answer here

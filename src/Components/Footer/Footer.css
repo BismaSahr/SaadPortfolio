@@ -116,6 +116,15 @@ body.dark-theme .social-item {
     border-right-color: var(--border-color);
 }
 
+body.dark-theme .brand-statement,
+body.dark-theme .footer-title,
+body.dark-theme .linkCol,
+body.dark-theme .footer-contact-link,
+body.dark-theme .footer-contact-link.text-white,
+body.dark-theme .huge-text {
+    color: #000 !important;
+}
+
 /* Responsive Grid */
 @media (max-width: 992px) {
     .social-bar {

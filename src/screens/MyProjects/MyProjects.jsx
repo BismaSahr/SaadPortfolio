@@ -105,7 +105,7 @@ const MyProjects = () => {
         </div>
 
         <h1 className="stroke-text">
-          Creative Works
+          My Work
         </h1>
 
       </div>

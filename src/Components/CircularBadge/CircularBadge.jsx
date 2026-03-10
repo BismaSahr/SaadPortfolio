@@ -16,7 +16,7 @@ const CircularBadge = () => {
     };
 
     return (
-        <div onClick={handleTalkClick} className="circular-badge-container d-none d-lg-flex mt-3">
+        <div onClick={handleTalkClick} className="circular-badge-container d-none d-lg-flex ">
             <div className="circular-badge">
                 <div className="badge-text-wrapper">
                     {chars.map((char, i) => (

@@ -13,7 +13,7 @@ const Accordian = () => {
   const handleShow = () => setShowModal(true);
 
   return (
-    <Container fluid className="py-5 px-3 px-md-5 pt-4 processes-section">
+    <Container fluid className="py-5 px-3 px-md-5 pt-4 processes-section mb-4">
       <div className="container mt-5">
         <div className="row justify-content-center">
           <div className="col-12 text-center mt-4">
